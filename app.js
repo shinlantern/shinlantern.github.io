@@ -1,6 +1,46 @@
 (function(){                                                                     
     var app = angular.module('myPortfolioApp', [])
+                     .controller('HomeController', HomeController)
+                     .controller('ProjectPagesController', ProjectPagesController)
                      .run(run);
+
+                     HomeController.$inject = ['$rootScope', '$scope'];
+                     function HomeController($rootScope, $scope) {
+                 
+                     }
+                 
+                     ProjectPagesController.$inject = ['$rootScope', '$scope'];
+                     function ProjectPagesController($rootScope, $scope) {
+                        const queryString = window.location.search;
+                        const urlParams = new URLSearchParams(queryString);
+                        const page_name = urlParams.get('page_name')
+                        var page_description;
+
+                         switch(page_name){
+                            case "AdoboCloudCRMPage":
+                                page_description = "<p>Lorem impsum etc etc<p>";
+
+                                $scope.ProjectActivePageDatas = {
+                                    "PageTitle": "Adobo Cloud CRM",
+                                    "PageDetails": angular.element(page_description).html(),
+                                    "Images":[
+                                        {"":""}
+                                    ]
+                                 };
+                                break;
+                            case "AdoboClientPage":
+                                page_description = "<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>";
+
+                                $scope.ProjectActivePageDatas = {
+                                    "PageTitle": "Adobo Client",
+                                    "PageDetails": angular.element(page_description).html(),
+                                    "Images":[
+                                        {"":""}
+                                    ]
+                                 };
+                                break;
+                         }
+                     }
 
                      run.$inject = ['$rootScope'];
                      function run($rootScope) {
@@ -19,6 +59,6 @@
                             ]
                          };
 
-                         console.log($rootScope.OwnerInfo);
+                        //  console.log($rootScope.OwnerInfo);
                      }
 })();  

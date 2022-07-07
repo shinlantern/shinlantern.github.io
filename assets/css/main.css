@@ -191,7 +191,7 @@ input, select, textarea {
 	}
 
 		h1.major {
-			margin: 0 0 1.3em 0;
+			margin: 0 0 0.5em 0;
 			position: relative;
 			padding-bottom: 0.35em;
 		}
@@ -3206,7 +3206,7 @@ input, select, textarea {
 	}
 
 		.wrapper > .inner {
-			padding: 5em 5em 3em 5em ;
+			padding: 1em 5em 3em 5em ;
 			max-width: 100%;
 			width: 75em;
 		}
@@ -3372,7 +3372,7 @@ input, select, textarea {
 		display: flex;
 		background-color: #5e42a6;
 		cursor: default;
-		padding: 1.75em 2em;
+		padding: 0.10em  2em;
 	}
 
 		#header > .title {
