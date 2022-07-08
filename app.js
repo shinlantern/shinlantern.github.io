@@ -21,10 +21,15 @@
                                 page_description = "<p>Lorem impsum etc etc<p>";
 
                                 $scope.ProjectActivePageDatas = {
-                                    "PageTitle": "Adobo Cloud CRM",
-                                    "PageDetails": angular.element(page_description).html(),
-                                    "Images":[
-                                        {"":""}
+                                    PageTitle: "Adobo Cloud CRM",
+                                    PageDetails: angular.element(page_description).html(),
+                                    Images:[
+                                        {ImageSrc:"images/ProjectImages/AdoboCloud CRM/Screenshot_1.jpg", Info:""},
+                                        {ImageSrc:"images/ProjectImages/AdoboCloud CRM/Screenshot_2.png", Info:""},
+                                        {ImageSrc:"images/ProjectImages/AdoboCloud CRM/Screenshot_3.png", Info:""},
+                                        {ImageSrc:"images/ProjectImages/AdoboCloud CRM/Screenshot_4.png", Info:""},
+                                        {ImageSrc:"images/ProjectImages/AdoboCloud CRM/Screenshot_5.png", Info:""},
+                                        {ImageSrc:"images/ProjectImages/AdoboCloud CRM/Screenshot_6.png", Info:""}
                                     ]
                                  };
                                 break;
@@ -32,14 +37,23 @@
                                 page_description = "<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>";
 
                                 $scope.ProjectActivePageDatas = {
-                                    "PageTitle": "Adobo Client",
-                                    "PageDetails": angular.element(page_description).html(),
-                                    "Images":[
-                                        {"":""}
+                                    PageTitle: "Adobo Client",
+                                    PageDetails: angular.element(page_description).html(),
+                                    Images:[
+                                        {ImageSrc:"images/ProjectImages/AdoboClient/Screenshot_1.png", Info:""},
+                                        {ImageSrc:"images/ProjectImages/AdoboClient/Screenshot_2.png", Info:""},
+                                        {ImageSrc:"images/ProjectImages/AdoboClient/Screenshot_3.png", Info:""},
+                                        {ImageSrc:"images/ProjectImages/AdoboClient/Screenshot_4.png", Info:""},
+                                        {ImageSrc:"images/ProjectImages/AdoboClient/Screenshot_5.png", Info:""},
+                                        {ImageSrc:"images/ProjectImages/AdoboClient/Screenshot_6.png", Info:""}
                                     ]
                                  };
                                 break;
                          }
+
+
+
+                         
                      }
 
                      run.$inject = ['$rootScope'];
