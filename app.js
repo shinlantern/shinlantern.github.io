@@ -17,76 +17,207 @@
 
     switch (page_name) {
       case "AdoboCloudCRMPage":
-        page_description = "<p>Lorem impsum etc etc<p>";
+        page_description =
+          "This system is about customer relationship management. I was one of the developer in this project and my task is to add new function, test bugs and maintain the system.\
+          <br> Some function of are customer management, invoicing, payments, ticketing, job order, scheduling, customer location mapping, reports, sms via api and others.";
 
         $scope.ProjectActivePageDatas = {
           PageTitle: "Adobo Cloud CRM",
-          PageDetails: angular.element(page_description).html(),
+          PageDetails: page_description.split("<br>"),
           Images: [
             {
               ImageSrc: "images/ProjectImages/AdoboCloud CRM/Screenshot_1.jpg",
-              Info: "",
+              Info: "Landing page",
             },
             {
               ImageSrc: "images/ProjectImages/AdoboCloud CRM/Screenshot_2.png",
-              Info: "",
+              Info: "List of companies that uses our system.",
             },
             {
               ImageSrc: "images/ProjectImages/AdoboCloud CRM/Screenshot_3.png",
-              Info: "",
+              Info: "Authenticated user dashboard page.",
             },
             {
               ImageSrc: "images/ProjectImages/AdoboCloud CRM/Screenshot_4.png",
-              Info: "",
+              Info: "Subscriber details page.",
             },
             {
               ImageSrc: "images/ProjectImages/AdoboCloud CRM/Screenshot_5.png",
-              Info: "",
+              Info: "Subscriber mapping using google map api.",
             },
             {
               ImageSrc: "images/ProjectImages/AdoboCloud CRM/Screenshot_6.png",
               Info: "",
             },
           ],
+          CreatedWith:
+            "Asp.net Mvc 5, html, javascript, bootstrap 4, signalR, google map api and others",
         };
-
         break;
       case "AdoboClientPage":
         page_description =
-          "<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>";
+          'This system is related to my previous project "Adobo Cloud CRM".\
+          It is basically the customers portal to view their respective\
+          account information like invoices, data usage, tickets,\
+          job orders and also to pay their respective bills.\
+          <br>I was one of the developer who develop and maintains the system including adding various technology like the realtime payment gateways. Paypal, Paynamics and lastly Xendit are currently included';
 
         $scope.ProjectActivePageDatas = {
           PageTitle: "Adobo Client",
-          PageDetails: angular.element(page_description).html(),
+          PageDetails: page_description.split("<br>"),
           Images: [
             {
               ImageSrc: "images/ProjectImages/AdoboClient/Screenshot_1.png",
-              Info: "",
+              Info: "Landing page",
             },
             {
               ImageSrc: "images/ProjectImages/AdoboClient/Screenshot_2.png",
-              Info: "",
+              Info: "Authenticated user dashboard/home page.",
             },
             {
               ImageSrc: "images/ProjectImages/AdoboClient/Screenshot_3.png",
-              Info: "",
+              Info: "User account profile.",
             },
             {
               ImageSrc: "images/ProjectImages/AdoboClient/Screenshot_4.png",
-              Info: "",
+              Info: "User tickets",
             },
             {
               ImageSrc: "images/ProjectImages/AdoboClient/Screenshot_5.png",
-              Info: "",
+              Info: "User account details, invoice details and payment details.",
             },
             {
               ImageSrc: "images/ProjectImages/AdoboClient/Screenshot_6.png",
-              Info: "",
+              Info: "Payment details.",
             },
           ],
+          CreatedWith:
+            "Asp.net Mvc 5, html, javascript, bootstrap 5, paypal api, paymaya api, paynamics api, xendit api, xemaphore api",
         };
         break;
+      case "AdoboClientExpressPage":
+        page_description =
+          "This system is also related to Adobo Cloud CRM. This focuses on processing realtime payments of the customer.<br>\
+          I was the developer of this small web app and also maintain it. The technique that I used here are payment gateway api and sms api for sending payment confirmation";
+
+        $scope.ProjectActivePageDatas = {
+          PageTitle: "Adobo Client Express",
+          PageDetails: page_description.split("<br>"),
+          Images: [
+            {
+              ImageSrc:
+                "images/ProjectImages/AdoboClient Express/Screenshot_1.png",
+              Info: "Landing page",
+            },
+            {
+              ImageSrc:
+                "images/ProjectImages/AdoboClient Express/Screenshot_2.png",
+              Info: "Account verification.",
+            },
+            {
+              ImageSrc:
+                "images/ProjectImages/AdoboClient Express/Screenshot_3.png",
+              Info: "Invoice list.",
+            },
+            {
+              ImageSrc:
+                "images/ProjectImages/AdoboClient Express/Screenshot_4.png",
+              Info: "Invoice selection.",
+            },
+            {
+              ImageSrc:
+                "images/ProjectImages/AdoboClient Express/Screenshot_5.png",
+              Info: "Payment gateway selections.",
+            },
+            {
+              ImageSrc:
+                "images/ProjectImages/AdoboClient Express/Screenshot_6.png",
+              Info: "Payment Processing.",
+            },
+          ],
+          CreatedWith:
+            "Asp.net Mvc 5, html, javascript, bootstrap 5, paypal api, paymaya api, paynamics api, xendit api, xemaphore api",
+        };
+        break;
+      case "BopisPage":
+        break;
+      case "CansiInventoryPage":
+        page_description =
+          "This system is also related to Adobo Cloud CRM. This focuses on processing realtime payments of the customer.<br>\
+          I was the developer of this small web app and also maintain it. The technique that I used here are payment gateway api and sms api for sending payment confirmation";
+
+        $scope.ProjectActivePageDatas = {
+          PageTitle: "Cansi Inventory",
+          PageDetails: page_description.split("<br>"),
+          Images: [
+            {
+              ImageSrc: "images/ProjectImages/Cansi Inventory/Screenshot_1.png",
+              Info: "Landing page",
+            },
+            {
+              ImageSrc: "images/ProjectImages/Cansi Inventory/Screenshot_2.png",
+              Info: "Customer page.",
+            },
+            {
+              ImageSrc: "images/ProjectImages/Cansi Inventory/Screenshot_3.png",
+              Info: "Product page.",
+            },
+            {
+              ImageSrc: "images/ProjectImages/Cansi Inventory/Screenshot_4.png",
+              Info: "Stock in page.",
+            },
+            {
+              ImageSrc: "images/ProjectImages/Cansi Inventory/Screenshot_5.png",
+              Info: "Order page.",
+            },
+            {
+              ImageSrc: "images/ProjectImages/Cansi Inventory/Screenshot_6.png",
+              Info: "Invoice page.",
+            },
+          ],
+          CreatedWith: "Asp.net Mvc 5, html, javascript, bootstrap 5",
+        };
+        break;
+      case "PadecoInquiryPage":
+        break;
+      case "Pelco3PPPage":
+        break;
     }
+
+    let slideIndex = 1;
+    $scope.showSlides = function (n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    };
+
+    // Next/previous controls
+    $scope.plusSlides = function (n) {
+      $scope.showSlides((slideIndex += n));
+    };
+
+    // Thumbnail image controls
+    $scope.currentSlide = function (n) {
+      $scope.showSlides((slideIndex = n));
+    };
+
+    $(function () {
+      $scope.showSlides(slideIndex);
+    });
   }
 
   run.$inject = ["$rootScope"];
