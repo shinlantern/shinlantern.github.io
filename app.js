@@ -87,50 +87,6 @@
         };
         break;
     }
-
-    var html = "",
-      el = document.getElementById("slideshowDiv");
-
-    var log = [];
-    angular.forEach(
-      $scope.ProjectActivePageDatas.Images,
-      function (value, key) {
-        var tempHtml =
-          '<div>\
-               <div class="mySlides fade">\
-                   <div class="numbertext">' +
-          key +
-          1 +
-          " / " +
-          $scope.ProjectActivePageDatas.Images.length +
-          "</div>\
-                   <img src=" +
-          value.ImageSrc +
-          ' style="width:100%">\
-                   <div class="text">' +
-          value.Info +
-          "</div>\
-               </div>\
-           </div>";
-
-        html += tempHtml;
-        //this.push(key + ": " + value);
-      },
-      log
-    );
-
-    //console.log(log);
-
-    //$scope.value = "mk";
-
-    //angular.element(el).append($compile(html)($scope));
-
-    //console.log(html);
-
-    // $scope.selectedValue = function (value) {
-    //   $scope.val = value;
-    //   console.log($scope.val);
-    // };
   }
 
   run.$inject = ["$rootScope"];

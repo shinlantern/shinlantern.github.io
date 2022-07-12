@@ -37,28 +37,9 @@
 						<!-- Slideshow container -->
 						<div class="slideshow-container" id="slideshowDiv">
 
-							<!-- Full-width images with number and caption text -->
-							<!-- <div class="mySlides fade">
-								<div class="numbertext">1 / 3</div>
-								<img src="{{ProjectActivePageDatas.Images[0].ImageSrc}}" style="width:100%">
-								<div class="text">Caption Text</div>
-							</div>
-						
-							<div class="mySlides fade">
-							<div class="numbertext">2 / 3</div>
-							<img src={{ProjectActivePageDatas.Images[1].ImageSrc}} style="width:100%">
-							<div class="text">Caption Two</div>
-							</div>
-						
-							<div class="mySlides fade">
-							<div class="numbertext">3 / 3</div>
-							<img src={{ProjectActivePageDatas.Images[2].ImageSrc}} style="width:100%">
-							<div class="text">Caption Three</div>
-							</div> -->
-
 							<div ng-repeat="image in ProjectActivePageDatas.Images">
 								<div class="mySlides fade">
-									<div class="numbertext">{{$index}} / {{ProjectActivePageDatas.Images.length}}</div>
+									<div class="numbertext">{{$index + 1}} / {{ProjectActivePageDatas.Images.length}}</div>
 									<img src={{image.ImageSrc}} style="width:100%">
 									<div class="text">{{image.Info}}</div>
 								</div>
@@ -71,9 +52,7 @@
 
 						<!-- The dots/circles -->
 						<div style="text-align:center">
-							<span class="dot" onclick="currentSlide(1)"></span>
-							<span class="dot" onclick="currentSlide(2)"></span>
-							<span class="dot" onclick="currentSlide(3)"></span>
+							<span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span>
 						</div>
 
 							{{ProjectActivePageDatas.PageDetails}}
