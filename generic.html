@@ -36,15 +36,15 @@
 		<!-- Main -->
 		<section id="main" class="wrapper">
 			<div class="inner">
-				<h3 class="major" style="margin-bottom: 0px; padding-left: 5px;">{{ProjectActivePageDatas.PageTitle}}</h3>
-				<code style="padding: 0px 0px 0px 3px;">{{ProjectActivePageDatas.CreatedWith}}</code>
+				<h3 class="major" style="margin-bottom: 0px; padding-left: 5px;">{{ProjectDatas.PageTitle}}</h3>
+				<code style="padding: 0px 0px 0px 3px;">{{ProjectDatas.CreatedWith}}</code>
 
 				<!-- Slideshow container -->
 				<div class="slideshow-container" id="slideshowDiv">
 
-					<div ng-repeat="image in ProjectActivePageDatas.Images">
+					<div ng-repeat="image in ProjectDatas.Images">
 						<div class="mySlides fade">
-							<div class="numbertext">{{$index + 1}} / {{ProjectActivePageDatas.Images.length}}</div>
+							<div class="numbertext">{{$index + 1}} / {{ProjectDatas.Images.length}}</div>
 							<img src={{image.ImageSrc}} style="width:100%">
 							<div class="text" style="color:black;">{{image.Info}}</div>
 						</div>
@@ -57,11 +57,11 @@
 
 				<!-- The dots/circles -->
 				<div style="text-align:center">
-					<span ng-repeat="image in ProjectActivePageDatas.Images" class="dot"
+					<span ng-repeat="image in ProjectDatas.Images" class="dot"
 						ng-click="currentSlide($index + 1)"></span>
 				</div>
-				<!-- {{ProjectActivePageDatas.PageDetails}} -->
-				<p ng-repeat="paragraph in ProjectActivePageDatas.PageDetails" style="margin-bottom:15px;">{{paragraph}}</p>
+				<!-- {{ProjectDatas.PageDetails}} -->
+				<p ng-repeat="paragraph in ProjectDatas.PageDetails" style="margin-bottom:15px;">{{paragraph}}</p>
 			</div>
 		</section>
 

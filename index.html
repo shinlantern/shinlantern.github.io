@@ -14,6 +14,120 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+
+    <style type="text/css">
+.main {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.d1 {
+  position: absolute;
+  background-image: url("assets/css/images/it_intro.jpg");
+  background-size: 2700px 1500px;
+
+  height: 30vh;
+  width: 15vw;
+
+  background-position: 0 50%;
+
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  animation: dd1 10s 1, dd12 10s 1;
+  animation-delay: 1s, 11s;
+}
+.d2 {
+  position: absolute;
+  background-image: url("assets/css/images/it_intro.jpg");
+  background-size: 2700px 1500px;
+
+  height: 50vh;
+  width: 25vw;
+
+  background-position: -10vw 50%;
+  left: 10vw;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  animation: dd2 10s 2;
+  animation-delay: 1s;
+}
+.d3 {
+  position: absolute;
+  background-image: url("assets/css/images/it_intro.jpg");
+  background-size: 2700px 1500px;
+  overflow: hidden;
+
+  height: 100vh;
+  width: 40vw;
+  left: 25vw;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  background-position: -35vw 50%;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  animation: dd3 10s 2;
+  animation-delay: 1s;
+}
+.d4 {
+  position: absolute;
+  overflow: hidden;
+  background-image: url("assets/css/images/it_intro.jpg");
+  background-size: 2700px 1500px;
+
+  height: 80vh;
+  width: 25vw;
+  left: 60vw;
+  background-position: -70vw 50%;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  animation: dd4 10s 2;
+  animation-delay: 1s;
+}
+
+@keyframes dd1 {
+  0% {
+  }
+  50% {
+    width: 95vw;
+  }
+}
+@keyframes dd12 {
+  0% {
+  }
+  50% {
+    background-position: Calc(0vw - 40px) 50%;
+  }
+}
+@keyframes dd2 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-10vw - 40px) 50%;
+  }
+}
+@keyframes dd3 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-35vw - 40px) 50%;
+  }
+}
+@keyframes dd4 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-70vw - 40px) 50%;
+  }
+}
+
+    </style>
   </head>
   <body class="is-preload" ng-controller="HomeController">
     <!-- Sidebar -->
@@ -52,10 +166,16 @@
     <div id="wrapper">
       <!-- Intro -->
       <section id="intro" class="wrapper style1 fullscreen fade-up">
-        <div class="inner">
+        <div class="main">
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+            <div class="d4"></div>
+        </div>
+        <!-- <div class="inner">
           <h1>Welcome</h1>
           <p>Hi, this page is about my portfolio.</p>
-        </div>
+        </div> -->
       </section>
 
       <!-- One -->
@@ -65,7 +185,7 @@
             <div class="inner">
               <h2>My Projects</h2>
               <p>
-                These are the projects I have worked on mostly in Asp.net mvc
+                These are the projects I have worked on mostly in Asp.Net mvc
                 framework in c#, html, javascript and with the help of other
                 tools using various plugins, APIs, and techniques. Feel free to
                 browse each project.
@@ -75,16 +195,15 @@
         </section>
         <section>
           <a href="#" class="image"
-            ><img src="images/crm_logo.jpg" alt="" data-position="top center"
+            ><img
+              src="{{Projects[0].MainPageImageSrc}}"
+              alt=""
+              data-position="top center"
           /></a>
           <div class="content">
             <div class="inner">
-              <h2>Adobo Cloud CRM</h2>
-              <p>
-                It is a Customer Relation Management system made using Asp.net
-                Mvc 5 framework. It is privately owned system for their own
-                customers.
-              </p>
+              <h2>{{Projects[0].PageTitle}}</h2>
+              <p>{{Projects[0].MainPageDesc}}</p>
               <ul class="actions">
                 <li>
                   <a
@@ -100,14 +219,14 @@
         <section>
           <a href="#" class="image"
             ><img
-              src="images/crm_client_logo.jpg"
+              src="{{Projects[1].MainPageImageSrc}}"
               alt=""
-              data-position="25% 25%"
+              data-position="top center"
           /></a>
           <div class="content">
             <div class="inner">
-              <h2>Adobo Client</h2>
-              <p>This system is created for the Customer of Adobo Cloud CRM</p>
+              <h2>{{Projects[1].PageTitle}}</h2>
+              <p>{{Projects[1].MainPageDesc}}</p>
               <ul class="actions">
                 <li>
                   <a
@@ -123,17 +242,14 @@
         <section>
           <a href="#" class="image"
             ><img
-              src="images/crm_client_express_logo.jpg"
+              src="{{Projects[2].MainPageImageSrc}}"
               alt=""
-              data-position="25% 25%"
+              data-position="top center"
           /></a>
           <div class="content">
             <div class="inner">
-              <h2>Adobo Client Express</h2>
-              <p>
-                This system is also related to "Adobo Cloud CRM". This system
-                focus mainly on payment processing.
-              </p>
+              <h2>{{Projects[2].PageTitle}}</h2>
+              <p>{{Projects[2].MainPageDesc}}</p>
               <ul class="actions">
                 <li>
                   <a
@@ -148,16 +264,15 @@
         </section>
         <section>
           <a href="#" class="image"
-            ><img src="images/pic03.jpg" alt="" data-position="25% 25%"
+            ><img
+              src="{{Projects[3].MainPageImageSrc}}"
+              alt=""
+              data-position="top center"
           /></a>
           <div class="content">
             <div class="inner">
-              <h2>Bopis</h2>
-              <p>
-                Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-                turpis mauris, eu ultricies erat malesuada quis. Aliquam
-                dapibus.
-              </p>
+              <h2>{{Projects[3].PageTitle}}</h2>
+              <p>{{Projects[3].MainPageDesc}}</p>
               <ul class="actions">
                 <li>
                   <a href="generic.html?page_name=BopisPage" class="button"
@@ -171,17 +286,14 @@
         <section>
           <a href="#" class="image"
             ><img
-              src="images/cansi_main_img.jpg"
+              src="{{Projects[4].MainPageImageSrc}}"
               alt=""
-              data-position="25% 25%"
+              data-position="top center"
           /></a>
           <div class="content">
             <div class="inner">
-              <h2>Cansi Inventory</h2>
-              <p>
-                It is a Inventory system project with customer management,
-                accounting and ordering module.
-              </p>
+              <h2>{{Projects[4].PageTitle}}</h2>
+              <p>{{Projects[4].MainPageDesc}}</p>
               <ul class="actions">
                 <li>
                   <a
@@ -197,14 +309,14 @@
         <section>
           <a href="#" class="image"
             ><img
-              src="images/padeco_inquiry_logo.jpg"
+              src="{{Projects[5].MainPageImageSrc}}"
               alt=""
-              data-position="25% 25%"
+              data-position="top center"
           /></a>
           <div class="content">
             <div class="inner">
-              <h2>Padeco Inquiry</h2>
-              <p>Inquiry and subscription application company.</p>
+              <h2>{{Projects[5].PageTitle}}</h2>
+              <p>{{Projects[5].MainPageDesc}}</p>
               <ul class="actions">
                 <li>
                   <a
@@ -219,15 +331,15 @@
         </section>
         <section>
           <a href="#" class="image"
-            ><img src="images/pelco_3_logo.jpg" alt="" data-position="25% 25%"
+            ><img
+              src="{{Projects[6].MainPageImageSrc}}"
+              alt=""
+              data-position="top center"
           /></a>
           <div class="content">
             <div class="inner">
-              <h2>Pelco 3 Payment Center</h2>
-              <p>
-                System for local electric company for managing agents, bills
-                payment and agent commission.
-              </p>
+              <h2>{{Projects[6].PageTitle}}</h2>
+              <p>{{Projects[6].MainPageDesc}}</p>
               <ul class="actions">
                 <li>
                   <a href="generic.html?page_name=Pelco3PPPage" class="button"
@@ -238,17 +350,13 @@
             </div>
           </div>
         </section>
-      </section>
-
       <!-- Two -->
       <section id="two" class="wrapper style3 fade-up">
         <div class="inner">
-          <h2>What we do</h2>
+          <h2>What I do</h2>
           <p>
-            Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-            turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus,
-            lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-            imperdiet est velit quis lorem.
+            I'm a web developer with over 4 years' experience.
+            I have developed and maintained various projects from scratch, handling the development of its back-end and front-end.
           </p>
           <div class="features">
             <section>
@@ -300,9 +408,6 @@
               </p>
             </section>
           </div>
-          <ul class="actions">
-            <li><a href="generic.html" class="button">Learn more</a></li>
-          </ul>
         </div>
       </section>
 
