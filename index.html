@@ -397,13 +397,13 @@
               <div class="col-4 col-12-medium">
                 <h3>Language</h3>
                 <ul>
-                  <li ng-repeat="skills in OwnerInfo.SoftwareDevelopment[1].Language">{{skills.Name}} - ({{skills.YearMonths}})</li>
+                  <li ng-repeat="skills in OwnerInfo.SoftwareDevelopment[1].Language">{{skills.Name}} {{skills.YearMonths != '' ? ' - ' + '('+skills.YearMonths+')' : ''}}</li>
                 </ul>
               </div>
               <div class="col-4 col-12-medium">
                 <h3>Software Application</h3>
                 <ul>
-                  <li ng-repeat="skills in OwnerInfo.SoftwareDevelopment[2].SoftwareApplication">{{skills.Name}} - ({{skills.YearMonths}})</li>
+                  <li ng-repeat="skills in OwnerInfo.SoftwareDevelopment[2].SoftwareApplication">{{skills.Name}} {{skills.YearMonths != '' ? ' - ' + '('+skills.YearMonths+')' : ''}}</li>
                 </ul>
               </div>
             </div>
