@@ -16,117 +16,132 @@
     /></noscript>
 
     <style type="text/css">
-.main {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
-.d1 {
-  position: absolute;
-  background-image: url("assets/css/images/it_intro.jpg");
-  background-size: 2700px 1500px;
+        .main {
+          height: 100vh;
+          width: auto;
+          position: relative;
+        }
+        .d1 {
+          position: absolute;
+          background-image: url("assets/css/images/it_intro.jpg");
+          background-size: 2700px 1500px;
 
-  height: 30vh;
-  width: 15vw;
+          height: 30vh;
+          width: 15vw;
 
-  background-position: 0 50%;
+          background-position: 0 50%;
 
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 4;
-  animation: dd1 10s 1, dd12 10s 1;
-  animation-delay: 1s, 11s;
-}
-.d2 {
-  position: absolute;
-  background-image: url("assets/css/images/it_intro.jpg");
-  background-size: 2700px 1500px;
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 4;
+          animation: dd1 10s 1, dd12 10s 1;
+          animation-delay: 1s, 11s;
+        }
+        .d2 {
+          position: absolute;
+          background-image: url("assets/css/images/it_intro.jpg");
+          background-size: 2700px 1500px;
 
-  height: 50vh;
-  width: 25vw;
+          height: 50vh;
+          width: 25vw;
 
-  background-position: -10vw 50%;
-  left: 10vw;
+          background-position: -10vw 50%;
+          left: 10vw;
 
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  animation: dd2 10s 2;
-  animation-delay: 1s;
-}
-.d3 {
-  position: absolute;
-  background-image: url("assets/css/images/it_intro.jpg");
-  background-size: 2700px 1500px;
-  overflow: hidden;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 1;
+          animation: dd2 10s 2;
+          animation-delay: 1s;
+        }
+        .d3 {
+          position: absolute;
+          background-image: url("assets/css/images/it_intro.jpg");
+          background-size: 2700px 1500px;
+          overflow: hidden;
 
-  height: 100vh;
-  width: 40vw;
-  left: 25vw;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
-  background-position: -35vw 50%;
+          height: 100vh;
+          width: 40vw;
+          left: 25vw;
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+          background-position: -35vw 50%;
 
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-  animation: dd3 10s 2;
-  animation-delay: 1s;
-}
-.d4 {
-  position: absolute;
-  overflow: hidden;
-  background-image: url("assets/css/images/it_intro.jpg");
-  background-size: 2700px 1500px;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 3;
+          animation: dd3 10s 2;
+          animation-delay: 1s;
+        }
+        .d4 {
+          position: absolute;
+          overflow: hidden;
+          background-image: url("assets/css/images/it_intro.jpg");
+          background-size: 2700px 1500px;
 
-  height: 80vh;
-  width: 25vw;
-  left: 60vw;
-  background-position: -70vw 50%;
+          height: 80vh;
+          width: 18.5vw;
+          left: 60vw;
+          background-position: -70vw 50%;
 
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  animation: dd4 10s 2;
-  animation-delay: 1s;
-}
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 1;
+          animation: dd4 10s 2;
+          animation-delay: 1s;
+        }
 
-@keyframes dd1 {
-  0% {
-  }
-  50% {
-    width: 95vw;
-  }
-}
-@keyframes dd12 {
-  0% {
-  }
-  50% {
-    background-position: Calc(0vw - 40px) 50%;
-  }
-}
-@keyframes dd2 {
-  0% {
-  }
-  50% {
-    background-position: Calc(-10vw - 40px) 50%;
-  }
-}
-@keyframes dd3 {
-  0% {
-  }
-  50% {
-    background-position: Calc(-35vw - 40px) 50%;
-  }
-}
-@keyframes dd4 {
-  0% {
-  }
-  50% {
-    background-position: Calc(-70vw - 40px) 50%;
-  }
-}
-
+        @keyframes dd1 {
+          0% {
+          }
+          50% {
+            width: 78.5vw;
+          }
+        }
+        @keyframes dd12 {
+          0% {
+          }
+          50% {
+            background-position: Calc(0vw - 40px) 50%;
+          }
+        }
+        @keyframes dd2 {
+          0% {
+          }
+          50% {
+            background-position: Calc(-10vw - 40px) 50%;
+          }
+        }
+        @keyframes dd3 {
+          0% {
+          }
+          50% {
+            background-position: Calc(-35vw - 40px) 50%;
+          }
+        }
+        @keyframes dd4 {
+          0% {
+          }
+          50% {
+            background-position: Calc(-70vw - 40px) 50%;
+          }
+        }
+        .bg-text {
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+          color: white;
+          font-weight: bold;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          width: 80%;
+          padding: 20px;
+          text-align: center;
+          height: 30vh;
+          width: 100%;
+        }
     </style>
   </head>
   <body class="is-preload" ng-controller="HomeController">
@@ -166,16 +181,27 @@
     <div id="wrapper">
       <!-- Intro -->
       <section id="intro" class="wrapper style1 fullscreen fade-up">
-        <div class="main">
-            <div class="d1"></div>
-            <div class="d2"></div>
-            <div class="d3"></div>
-            <div class="d4"></div>
+        <div class="main" ng-class="{'blur-bgimage' : showBlurBg}">
+            <div class="d1">
+              
+            </div>
+            <div class="d2">
+            </div>
+            <div class="d3">
+              <div class="inner">
+                <div ng-hide="IsHideWelcomeNote" style="text-align: center; margin-top: 50%;">
+                  <div class="bg-text">
+                    <h2>Welcome</h2>
+                    <p>Nice to meet you. This page is about my portfolio.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d4">
+              
+            </div>
         </div>
-        <!-- <div class="inner">
-          <h1>Welcome</h1>
-          <p>Hi, this page is about my portfolio.</p>
-        </div> -->
+        
       </section>
 
       <!-- One -->
@@ -357,14 +383,48 @@
           <p>
             I'm a web developer with over 4 years' experience.
             I have developed and maintained various projects from scratch, handling the development of its back-end and front-end.
+            I can apply designs to working websites using HTML, CSS, and Javascript. I can use bootstrap to make a website responsive in any screen resolution.
           </p>
-          <div class="features">
+          <h2>My Skills</h2>
+          <section>
+            <div class="row">
+              <div class="col-4 col-12-medium">
+                <h3>Web Development</h3>
+                <ul>
+                  <li ng-repeat="skills in OwnerInfo.SoftwareDevelopment[0].WebDevelopment">{{skills.Name}} {{skills.YearMonths != '' ? ' - ' + '('+skills.YearMonths+')' : ''}}</li>
+                </ul>
+              </div>
+              <div class="col-4 col-12-medium">
+                <h3>Language</h3>
+                <ul>
+                  <li ng-repeat="skills in OwnerInfo.SoftwareDevelopment[1].Language">{{skills.Name}} - ({{skills.YearMonths}})</li>
+                </ul>
+              </div>
+              <div class="col-4 col-12-medium">
+                <h3>Software Application</h3>
+                <ul>
+                  <li ng-repeat="skills in OwnerInfo.SoftwareDevelopment[2].SoftwareApplication">{{skills.Name}} - ({{skills.YearMonths}})</li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="col-12-medium">
+                <h3>Icons</h3>
+                <ul class="icons">
+                  <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                  <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                </ul>
+              </div>
+            </div> -->
+          </section>
+          <!-- <div class="features">
             <section>
               <span class="icon solid major fa-code"></span>
-              <h3>Lorem ipsum amet</h3>
+              <h3>Web Development</h3>
               <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
+                I can apply designs to working websites using HTML, CSS, and Javascript. I can use bootstrap to make a website mobile responsive.
               </p>
             </section>
             <section>
@@ -407,7 +467,7 @@
                 aliquam turpis mauris, sed ultricies erat dapibus.
               </p>
             </section>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -447,19 +507,16 @@
               <ul class="contact">
                 <li>
                   <h3>Address</h3>
-                  <span
-                    >12345 Somewhere Road #654<br />
-                    Nashville, TN 00000-0000<br />
-                    USA</span
+                  <span>{{OwnerInfo.Location}}</span
                   >
                 </li>
                 <li>
                   <h3>Email</h3>
-                  <a href="#">user@untitled.tld</a>
+                  <a href="#">{{OwnerInfo.Email}}</a>
                 </li>
                 <li>
                   <h3>Phone</h3>
-                  <span>(000) 000-0000</span>
+                  <span>{{OwnerInfo.Mobile}}</span>
                 </li>
                 <li>
                   <h3>Social</h3>
@@ -475,7 +532,7 @@
                       >
                     </li>
                     <li>
-                      <a href="#" class="icon brands fa-github"
+                      <a href="https://github.com/shinlantern" class="icon brands fa-github"
                         ><span class="label">GitHub</span></a
                       >
                     </li>
@@ -485,7 +542,7 @@
                       >
                     </li>
                     <li>
-                      <a href="#" class="icon brands fa-linkedin-in"
+                      <a href="https://www.linkedin.com/in/allan-ternola-bb8895155/" class="icon brands fa-linkedin-in"
                         ><span class="label">LinkedIn</span></a
                       >
                     </li>

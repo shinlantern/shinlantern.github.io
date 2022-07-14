@@ -5,8 +5,15 @@
     .controller("ProjectPagesController", ProjectPagesController)
     .run(run);
 
-  HomeController.$inject = ["$rootScope", "$scope"];
-  function HomeController($rootScope, $scope) {}
+  HomeController.$inject = ["$rootScope", "$scope", "$timeout"];
+  function HomeController($rootScope, $scope, $timeout) {
+    $scope.IsHideWelcomeNote = true;
+    $scope.showBlurBg = false;
+    $timeout(function () {
+      $scope.IsHideWelcomeNote = false;
+      $scope.showBlurBg = true;
+    }, 4000);
+  }
 
   ProjectPagesController.$inject = ["$rootScope", "$scope", "$compile"];
   function ProjectPagesController($rootScope, $scope, $compile) {
@@ -89,6 +96,7 @@
       Gender: "Male",
       Location: "Baguio City Philippines",
       Email: "allan.a.ternola@gmail.com",
+      Mobile: "+639996821630",
       EducationInfo: [
         {
           Id: "1",
@@ -117,32 +125,33 @@
       SoftwareDevelopment: [
         {
           WebDevelopment: [
-            { Name: "Asp.Net (MVC)", Level: "10" },
-            { Name: "Web API", Level: "10" },
-            { Name: "HTML", Level: "10" },
-            { Name: "CSS3/SASS", Level: "10" },
-            { Name: "AngularJS", Level: "10" },
-            { Name: "ReactJS", Level: "10" },
-            { Name: "WordPress", Level: "10" },
+            { Name: "Asp.Net (MVC)", YearMonths: "3 years +" },
+            { Name: "Web API", YearMonths: "3 years +" },
+            { Name: "HTML", YearMonths: "3 years +" },
+            { Name: "CSS/SASS", YearMonths: "3 years +" },
+            { Name: "Jquery", YearMonths: "3 years +" },
+            { Name: "AngularJS", YearMonths: "" },
+            { Name: "ReactJS", YearMonths: "" },
+            { Name: "WordPress", YearMonths: "4 month" },
           ],
         },
         {
           Language: [
-            { Name: "C#", Level: "10" },
-            { Name: "Java", Level: "10" },
-            { Name: "Javascript", Level: "10" },
-            { Name: "PHP", Level: "10" },
+            { Name: "C#", YearMonths: "3 years +" },
+            { Name: "Java", YearMonths: "In school" },
+            { Name: "Javascript", YearMonths: "3 years +" },
+            { Name: "PHP", YearMonths: "In school" },
           ],
         },
         {
           SoftwareApplication: [
-            { Name: "Visual Studio", Level: "10" },
-            { Name: "Visual Code", Level: "10" },
-            { Name: "Microsoft SQL Server", Level: "10" },
-            { Name: "GitHub", Level: "10" },
-            { Name: "VS SVN", Level: "10" },
-            { Name: "Microsoft Office Suite", Level: "10" },
-            { Name: "Adobo Photoshop", Level: "10" },
+            { Name: "Visual Studio", YearMonths: "3 years +" },
+            { Name: "Visual Code", YearMonths: "3 years +" },
+            { Name: "Microsoft SQL Server", YearMonths: "3 years +" },
+            { Name: "GitHub", YearMonths: "3 years +" },
+            { Name: "VS SVN", YearMonths: "2 years" },
+            { Name: "Microsoft Office Suite", YearMonths: "10" },
+            { Name: "Adobo Photoshop", YearMonths: "10" },
           ],
         },
       ],
@@ -175,7 +184,7 @@
         PageTitle: "Adobo Cloud CRM",
         PageDetails:
           "This system is about customer relationship management. I was one of the developer using Asp.net MVC Framework, my task is to add new function based on user feedback, test bugs and maintain the system.\
-        <br> Some function of are customer management, invoicing, payments, ticketing, job order, scheduling, customer location mapping, reports, sms via API and others.".split(
+        <br> Some functions are customer management, invoicing, payments, ticketing, job order, scheduling, customer location mapping, reports, sms via API and others.".split(
             "<br>"
           ),
         Images: [
