@@ -310,8 +310,9 @@
       {
         PageTitle: "Bopis Inventory",
         PageDetails:
-          "This system is also related to Adobo Cloud CRM. This focuses on processing realtime payments of the customer.<br>\
-        I was the developer of this small web app and also maintain it. The technique that I used here are payment gateway API and sms API for sending payment confirmation".split(
+          "Inventory system with customer management, ordering products, invoicing, payment, delivery trucking management.<br>\
+          It has web api for managing mobile app counterpart.<br>\
+          I was incharge of the web app adding new features.".split(
             "<br>"
           ),
         Images: [
@@ -343,9 +344,7 @@
         CreatedWith: "Asp.net Mvc 5, html, javascript, bootstrap 5",
         MainPageImageSrc: "images/pic03.jpg",
         MainPageDesc:
-          "Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam\
-        turpis mauris, eu ultricies erat malesuada quis. Aliquam\
-        dAPIbus.",
+          "Inventory system with truck management, customer management, ordering, invoicing, payment and reports.",
       },
       {
         PageTitle: "Cansi Inventory",
