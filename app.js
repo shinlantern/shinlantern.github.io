@@ -131,7 +131,7 @@
             { Name: "CSS/SASS", YearMonths: "3 years +" },
             { Name: "Jquery", YearMonths: "3 years +" },
             { Name: "AngularJS", YearMonths: "" },
-            { Name: "ReactJS", YearMonths: "" },
+            // { Name: "ReactJS", YearMonths: "" },
             { Name: "WordPress", YearMonths: "" },
           ],
         },
